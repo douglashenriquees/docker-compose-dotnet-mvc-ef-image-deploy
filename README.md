@@ -1,7 +1,8 @@
 ## Docker Compose
 
 * ```dotnet publish -c Release -o dist```
-* ```docker-compose build```
+* ```docker-compose -p application build```
+  * o parâmetro ```-p``` define o prefixo para criação dos volumes, redes e containers. Caso não informado, será utilizado o nome do diretório como prefixo
 * ```docker-compose up -d```
 * ```docker container ps -a```
 * ```docker container exec -it docker-compose-dotnet-mvc-ef-image_mysql_1 /bin/bash```
