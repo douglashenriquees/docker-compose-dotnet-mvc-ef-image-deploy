@@ -8,7 +8,7 @@
 * ```docker container exec -it docker-compose-dotnet-mvc-ef-image_mysql_1 /bin/bash```
 * ```mysql -u root -p```
 * ```show databases;```
-* ```docker-compose down -v --rmi all```
+* ```docker-compose -p application down --rmi all -v```
   * ```--rmi all``` remove também as imagens que foram baixadas para o **host**
 
 ## Publicando a Imagem

@@ -13,7 +13,19 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<IRepository, Repository>();
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+builder.Services.AddDbContext<AppDbContext>(options => UseMysql(options));
+
+void UseMysql(DbContextOptionsBuilder options)
+{
+    try
+    {
+        options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+    }
+    catch (Exception ex)
+    {
+        System.Console.WriteLine(ex.Message);
+    }
+}
 
 var app = builder.Build();
 
