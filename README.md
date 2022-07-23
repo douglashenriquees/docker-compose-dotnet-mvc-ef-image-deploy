@@ -11,6 +11,17 @@
 * ```docker-compose -p application down --rmi all -v```
   * ```--rmi all``` remove também as imagens que foram baixadas para o **host**
 
+## Dockerfile
+
+* ```FROM mcr.microsoft.com/dotnet/sdk:6.0```
+  * imagem com base no **sdk** do dotnet 6.0
+* ```LABEL version="4.0" description="Aplicacao ASP .NET MVC```
+  * versão e descrição da imagem
+* ```RUN mkdir /app```
+  * o comando **RUN** executa ações dentro do container. Neste caso, criar o diretório **/app** na raiz do container.
+* ```WORKDIR /app```
+  * o comando **WORKDIR** define o diretório de trabalho dentro do container. Isso faz as instruções abaixo serem executadas dentro do diretório estabalecido, até o final das instruções, ou até outro comando com a sentença **WORKDIR**
+
 ## Publicando a Imagem
 
 * ```dotnet publish -c Release -o dist```
