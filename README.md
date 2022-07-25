@@ -35,7 +35,6 @@
 
 ## Publicando a Imagem
 
-* ```dotnet publish -c Release -o dist```
 * ```docker image build -t asp-net-mvc/app:4.0 .```
 * ```docker image tag asp-net-mvc/app:4.0 username/mvc-produtos:4.0```
 * ```docker login -u username```
