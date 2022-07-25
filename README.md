@@ -4,7 +4,7 @@
   * o parâmetro ```-p``` define o prefixo para criação dos volumes, redes e containers. Caso não informado, será utilizado o nome do diretório como prefixo
 * ```docker-compose -p application up -d```
 * ```docker container ps -a```
-* ```docker container exec -it docker-compose-dotnet-mvc-ef-image_mysql_1 /bin/bash```
+* ```docker container exec -it application_mysql_1 /bin/bash```
 * ```mysql -u root -p```
 * ```show databases;```
 * ```docker-compose -p application down --rmi all -v```
