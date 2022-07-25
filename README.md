@@ -21,7 +21,7 @@
 * ```WORKDIR /app```
   * o comando **WORKDIR** define o diretório de trabalho dentro do container. Isso faz as instruções abaixo serem executadas dentro do diretório estabalecido, até o final do arquivo, ou até outro comando com a sentença **WORKDIR**
 * ```COPY . .```
-  * copia todos os arquivos do **host** para a pasta **/app - WORKDIR** do container
+  * copia todos os arquivos do **host** para a pasta **"/app - WORKDIR"** do container
 * ```RUN dotnet restore```
   * executa o comando para restaurar as dependências do nuget dentro do container
 * ```RUN dotnet publish -c Release -o dist```
