@@ -1,6 +1,5 @@
 ## Docker Compose
 
-* ```dotnet publish -c Release -o dist```
 * ```docker-compose -p application build --no-cache```
   * o parâmetro ```-p``` define o prefixo para criação dos volumes, redes e containers. Caso não informado, será utilizado o nome do diretório como prefixo
 * ```docker-compose -p application up -d```
