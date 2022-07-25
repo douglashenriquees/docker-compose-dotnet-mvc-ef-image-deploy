@@ -19,7 +19,7 @@
 * ```RUN mkdir /app```
   * o comando **RUN** executa ações dentro do container. Neste caso, criar o diretório **/app** na raiz do container
 * ```WORKDIR /app```
-  * o comando **WORKDIR** define o diretório de trabalho dentro do container. Isso faz as instruções abaixo serem executadas dentro do diretório estabalecido, até o final das instruções, ou até outro comando com a sentença **WORKDIR**
+  * o comando **WORKDIR** define o diretório de trabalho dentro do container. Isso faz as instruções abaixo serem executadas dentro do diretório estabalecido, até o final do arquivo, ou até outro comando com a sentença **WORKDIR**
 * ```COPY . .```
   * copia todos os arquivos do **host** para a pasta **/app - WORKDIR** do container
 * ```RUN dotnet restore```
