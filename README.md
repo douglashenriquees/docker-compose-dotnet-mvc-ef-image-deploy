@@ -25,7 +25,7 @@
 * ```RUN dotnet restore```
   * executa o comando para restaurar as dependências do nuget dentro do container
 * ```RUN dotnet publish -c Release -o dist```
-  * executa o comando para publicar a aplicação dentro da pasta **dist** do **WORKDIR** do container
+  * executa o comando para publicar a aplicação dentro da pasta **dist** no **WORKDIR** do container
 * ```EXPOSE 80/tcp```
   * expõe a porta **80** do container
 * ```ENV ASPNETCORE_URLS=http://+:5000```
